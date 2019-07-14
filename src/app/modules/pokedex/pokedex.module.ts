@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { PokedexRoutingModule } from './pokedex-routing.module';
 import { ListItemComponent } from './componetes/list-item/list-item.component';
 import { ListComponent } from './views/list/list.component';
+import { InformationComponent } from './views/information/information.component';
 
 
 @NgModule({
   declarations: [
     ListItemComponent,
-    ListComponent
+    ListComponent,
+    InformationComponent
   ],
   imports: [
     CommonModule,
