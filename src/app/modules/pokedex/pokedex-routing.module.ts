@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ListComponent } from './views/list/list.component';
 import { InformationComponent } from './views/information/information.component';
+import { InformationGuard } from './guards/information.guard';
 
 const routes: Routes = [
   {
@@ -10,7 +11,8 @@ const routes: Routes = [
   },
   {
     path: ':number',
-    component: InformationComponent
+    component: InformationComponent,
+    canActivate: [InformationGuard]
   }
 ];
 
